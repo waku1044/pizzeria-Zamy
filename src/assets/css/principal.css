@@ -1,0 +1,30 @@
+.subtitulo{
+    background-image: url(../img/subtitulo.jpg);
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    position: relative;
+}
+.subtitulo::before{
+    content: "";
+    position: absolute;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    inset: 0;
+}
+
+
+.madera{
+    background-image: url(../img/fondy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+/* .madera:before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    inset: 0;
+} */
