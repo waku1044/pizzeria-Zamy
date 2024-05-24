@@ -58,9 +58,9 @@ const Principal = () => {
             existencia
           </p>
         </div>
-        <div className="madera flex justify-around flex-wrap gap-11 h-auto mx-auto  border-red-500  p-5 py-14 bg-fuchsia-300">
+        <div className="madera flex justify-end flex-wrap  gap-y-10 md:grid md:grid-cols-3    border-red-500  py-14 px-5 mx-auto">
           {producto.map((imagen, index) => (
-            <div key={index} className="text-center w-1/6 ">
+            <div key={index} className="text-center w-1/2  z-10 ">
               <Product
                 img={imagen.img}
                 

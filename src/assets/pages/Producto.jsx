@@ -8,16 +8,18 @@ import Imagenes from "../img/Imagenes";
 import Btn from "../components/Btn";
 import "../css/pageProducto.css";
 
+
 const Producto = () => {
   const [contador, setContador] = useState(0);
   const [dataProducto, setDataProducto] = useState({});
 
   const params = useParams();
 
-  // console.log(params.id);
+  
 
   useEffect(() => {
     if (contador < 0) setContador(0);
+    
 
     setDataProducto(Imagenes[params.id]);
   }, [contador]);
@@ -27,7 +29,7 @@ const Producto = () => {
       <Header />
       <div className="fondoProducto bg-slate-500 flex items-center justify-center py-10 flex-col border-2">
        <BtnAtras msj="Volver"/>
-        <div className="w-3/4 grid grid-cols-2   bg-white">
+        <div className="w-3/4 grid grid-cols-1 md:grid-cols-2   bg-white">
           <div className="flex justify-center items-center  ">
             <img
               src={dataProducto.img}
@@ -58,7 +60,7 @@ const Producto = () => {
                   +
                 </button>
               </div>
-                <Btn msj="Añadir al carrito" dataProducto={dataProducto} cantidad={contador}/>
+                <Btn msj="Añadir al carrito" dataProducto={dataProducto.titulo} cantidad={contador}/>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 .subtitulo{
     background-image: url(../img/subtitulo.jpg);
-    background-size: 100% ;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: top;
     background-attachment: fixed;
@@ -22,9 +22,9 @@
     background-position: center;
     position: relative;
 }
-/* .madera:before{
+.madera:before{
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
     inset: 0;
-} */
+}
