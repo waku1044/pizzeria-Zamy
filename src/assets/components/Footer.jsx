@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+
 const Footer = () => {
   return (
     <>
@@ -12,7 +15,7 @@ const Footer = () => {
         </div>
 
         <p className="text-xl px-2 text-amber-400 font-semibold">
-          Diseñado por Destino Web | 2022.
+          Diseñado por <Link to="https://www.destinoweb.com.ar" target="_blank">Destino Web</Link> | 2022.
         </p>
       </footer>
     </>
