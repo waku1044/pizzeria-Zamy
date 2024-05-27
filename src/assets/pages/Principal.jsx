@@ -5,9 +5,13 @@ import imagenes from "../img/Imagenes";
 import Product from "../components/Product";
 import "../css/principal.css";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Principal = () => {
   const [producto, setProducto] = useState(imagenes);
+
+
+ 
 
   function menu(text) {
     var lista = [];
@@ -58,7 +62,7 @@ const Principal = () => {
             existencia
           </p>
         </div>
-        <div className="madera flex justify-end flex-wrap  gap-y-10 md:grid md:grid-cols-3    border-red-500  py-14 px-5 mx-auto">
+        <div className="madera flex justify-center gap-1 flex-wrap gap-y-10 sm:grid sm:grid-cols-3    border-red-500  py-14 px-5 sm:w-auto sm:mx-auto">
           {producto.map((imagen, index) => (
             <div key={index} className="text-center w-1/2  z-10 ">
               <Product
